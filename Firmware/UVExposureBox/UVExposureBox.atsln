@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "UVExposureBox", "UVExposureBox.cppproj", "{8B9AA08E-0EC1-4F17-B8DA-38D9D2DD1A96}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Misc", "..\..\..\..\AVR\Shared\Misc\Misc.cppproj", "{5C58DB9C-ADF8-400B-90FA-09404D4A0E4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B9AA08E-0EC1-4F17-B8DA-38D9D2DD1A96}.Debug|AVR.ActiveCfg = Debug|AVR
+		{8B9AA08E-0EC1-4F17-B8DA-38D9D2DD1A96}.Debug|AVR.Build.0 = Debug|AVR
+		{8B9AA08E-0EC1-4F17-B8DA-38D9D2DD1A96}.Release|AVR.ActiveCfg = Release|AVR
+		{8B9AA08E-0EC1-4F17-B8DA-38D9D2DD1A96}.Release|AVR.Build.0 = Release|AVR
+		{5C58DB9C-ADF8-400B-90FA-09404D4A0E4A}.Debug|AVR.ActiveCfg = Debug|AVR
+		{5C58DB9C-ADF8-400B-90FA-09404D4A0E4A}.Debug|AVR.Build.0 = Debug|AVR
+		{5C58DB9C-ADF8-400B-90FA-09404D4A0E4A}.Release|AVR.ActiveCfg = Release|AVR
+		{5C58DB9C-ADF8-400B-90FA-09404D4A0E4A}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

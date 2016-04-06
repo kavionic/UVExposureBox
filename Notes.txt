@@ -1,0 +1,147 @@
+Switches:
+- Power
+- Upper Light
+- Upper Time
+- Lower Light
+- Lower Time
+- Start
+- Stop
+- Compressor
+- Menu
+
+- Power
+- Upper Light
+- Lower Light
+- Compressor
+- Start
+- Stop
+- Menu
+- Knob
+
+Leds:
+- Power
+- Top
+- Bottom
+- Compressor
+
+Controls:
+- Upper leds
+- Lower leds
+- Compressor
+- LCD backlight
+- LCD contrast
+- LCD power.
+
+LED coverage:
+LED spacing: 8.3mm
+Min radius = SQR(4.15*4.15*2) = 5.87mm
+Min distance = 5.87 / tan(30) = 10.17mm
+
+
+LCD:
+Frame size:	97 x 40 x 9.6mm
+PCB size:	98 x 60 x 1.6mm
+Frame is centered on the PCB.
+
+Rotary encoder height:		6.7mm
+Switch tot height (pushed):	9.7mm
+
+LCD under PCB: 1.6+6.7+3 = 11.3	: Recessed 1.7mm
+LCD over PCB: 6.7-1.6+3  = 8.1	: Raised 1.5mm
+PCB to LCD connector width: 14.3mm
+LCD connector to edge: 2.5mm
+PCB connector 14.3-2.5 = 11,8mm from LCD edge.
+
+PCB: 9x17
+PCB area (10x18): 180cm2, 18000mm2
+
+Solder Mask Cyring diameter: 15.5mm, area: 188.7mm2
+
+Solder mask thickness: 75uM
+Solder mask volume = 18000 * 0.075 1350mm3
+Cyring length: 1350 / 188.7 = 7.15mm
+
+Solder mask thickness: 85uM
+Solder mask volume = 18000 * 0.085 1530mm3
+Cyring length: 1350 / 188.7 = 8.1mm
+
+Display corner = (33, 15) + (0.5, 10) = (33,5, 25)
+
+LCD-PCB to P1 switch: (98 - 80) / 2 = 9mm
+
+PWR:	-10, -21
+
+P1: 	 14, -67
+P2: 	 24, -67
+P3: 	 34, -67
+P4: 	 44, -67
+P5: 	 54, -67
+P6: 	 64, -67
+P7: 	 74, -67
+P8: 	 84, -67
+
+L_TOP:	 108, -44
+L_BOTTOM: 118, -44
+VAC:	  128,44
+
+START:	  108, -64
+STOP:	  118, -64
+MENU:	  128, -64
+
+KNOB:	  118, -24
+ 
+A=4
+B=6
+
+____------____------
+______----______----
+01234567890123456789
+
+
+==Front Panel==
+[[Image:UVBoxFrontPanelCGI.png|frame|640px|Front panel]]
+The front panel have a 20x4 character LCD screen. To the left of the screen there is a '''Standby''' button. Below the display there is 8 buttons that is primarily used to select preset. But they also doubles as a character/symbol group selector when editing text.
+
+On the right side there is a rotary knob and a group of 6 more buttons. The rotary knob is turned to change selection in menus and to edit values. And it also act like a button that can be pushed to select entries / enter values.
+
+The buttons below the knob each have a primary function, but are also used for other things in special contexts. Mainly when editing text.
+
+The primary function of the buttons is as follows. The two first buttons on the top row controls the vacuum pump. The left button decrease and the right button increase the speed of the pump. The last button on the top row is a generic '''Back''' or '''Cancel''' button.
+
+The first button on the bottom row is the '''Start/Pause''' button. It is primarily used to start and pause the radiation with the time / power settings defined in the currently selected preset. The middle button is the '''Stop''' button. Pressing this while radiating will immediately turn off the light panels. The rightmost button is the '''Menu''' button. It is used to enter the main menu from the preset screen and also to select sub-menus or start editing selected values (this actions can generally be performed by pushing the rotary knob as well).
+
+<br clear=all>
+
+==Preset screen==
+
+{|
+{{CharLCD|
+Resist / Doublesided<br>
+&rarr;Time:  00:30<br>
+&nbsp;Upper: OFF<br>
+&nbsp;Lower: 80%<br>
+&nbsp;Compr: 0 (OFF)<br>
+&nbsp;Rename...<br>
+&nbsp;Backup...<br>
+&nbsp;Restore...<br>
+&nbsp;Swap...<br>
+&nbsp;Copy...<br>
+&nbsp;Set/Get calibration
+}}
+|--
+{{CharLCD|
+Resist / Doublesided<br>
+&rarr;Upper:  01:00 / 40%<br>
+&nbsp;Lower: 00:30 / 80%<br>
+&nbsp;Compr: 0 (OFF)<br>
+&nbsp;Rename...<br>
+&nbsp;Backup...<br>
+&nbsp;Restore...<br>
+&nbsp;Swap...<br>
+&nbsp;Copy...<br>
+&nbsp;Set/Get calibration'''
+}}
+|}
+
+The preset screen is what you will see when you power up the unit. It allow you to edit the currently selected preset. Pressing the "Start" button while in the preset screen will start an exposure. The 8 buttons below the display are the preset select buttons. Pressing one will select the corresponding preset. Or if the preset is already selected, it will switch between "simple" and "advanced" mode. The only differences between the two modes is that in advanced both the time and power can be set individually for the upper and lower light panel. While in simple mode the time is shared and only the power can be set per panel. If the time differs between the two panels when switching from advanced to simple, the longest time will be used and the power will be reduced on the panel with the shorter time to make the total radiation the same that it was in advanced mode.
+<br clear=all>
